@@ -36,6 +36,14 @@ To better understand customer behavior, an unsupervised learning model was appli
 - Used the **Elbow Method** and **Silhouette Score** to determine the optimal number of clusters.
 - Visualized customer segmentation using **PCA (Principal Component Analysis)** for dimensionality reduction.
 
+ ### **WCSS (Within-Cluster Sum of Squares) for Optimal Cluster Selection**
+The WCSS was used to determine the optimal number of clusters for the K-Means algorithm. The steps followed were:
+
+Calculate WCSS for different numbers of clusters: We calculated the WCSS for a range of cluster numbers (e.g., from 1 to 10).
+Plot WCSS values: A plot was created showing the WCSS values on the y-axis and the number of clusters on the x-axis.
+Find the "Elbow": The point where the rate of decrease in WCSS slows down significantly indicates the optimal number of clusters. This "elbow" point was used to select the best number of clusters for the segmentation.
+The WCSS approach helped us avoid overfitting and underfitting, ensuring a well-balanced clustering solution
+
 #### **Model Evaluation**
 - **Silhouette Score:** Evaluated cluster cohesion and separation.
 - **Inertia:** Used to determine clustering effectiveness.
